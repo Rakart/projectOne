@@ -1,1 +1,9 @@
-<p>This is the partial for view 1.</p>
+<h1> Working Directory </h1>
+
+<!-- pull some data from Office 365: directory listing -->
+
+<div ng-controller="WorkingDirectory">
+  <p>User information as follows: </p>
+  <p>Logged in as: {{username}} on <em>{{loggedIn | date: 'dd MMM yyyy @ HH:mm:ss'}}</em></p>
+  <button ng-click="$log.log(username)">Log current user to console!</button>
+</div>
