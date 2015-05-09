@@ -1,9 +1,10 @@
-<h1> Working Directory </h1>
+<h1> Welcome Home </h1>
 
 <!-- pull some data from Office 365: directory listing -->
 
-<div ng-controller="WorkingDirectory">
-  <p>User information as follows: </p>
+<div ng-controller="home">
+  <p>USER INFORMATION</p>
   <p>Logged in as: {{username}} on <em>{{loggedIn | date: 'dd MMM yyyy @ HH:mm:ss'}}</em></p>
   <button ng-click="$log.log(username)">Log current user to console!</button>
+
 </div>
