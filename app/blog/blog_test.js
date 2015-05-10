@@ -10,7 +10,7 @@ describe('myApp.blog module', function() {
       //spec body
       var blog = $controller('blog');
       expect(blog).toBeDefined();
-    }));
 
+    }));
   });
 });

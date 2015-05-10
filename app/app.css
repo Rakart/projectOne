@@ -1,8 +1,13 @@
 /* app css stylesheet */
 
+body {
+  background-color: #ECECEC; /*light grey background colour */
+  color: #504F50; /* grey text colour */
+}
+
 .menu {
   list-style: none;
-  border-bottom: 0.1em solid black;
+  border-bottom: 0.1em solid #504F50;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
@@ -27,4 +32,34 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.contact {
+  list-style: none;
+  border-bottom: 0.5em solid #504F50;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+  text-align: center;
+}
+
+.contact > li {
+  display: inline;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.main-header {
+
+}
+
+.blog-description {
+
+}
+
+.latest-posts > li {
+  list-style: none;
+}
+
+.latest-posts > li > a:before {
+  content: "- ";
 }

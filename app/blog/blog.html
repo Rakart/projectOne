@@ -1,5 +1,19 @@
-<h1>Blog</h1>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div ng-controller="blog">
+
+  <h1>Blog</h1>
+  <p>
+    Showing of 'interpolate' filter:
+    {{ 'Current version is v%VERSION%.' | interpolate }}
+  </p>
+
+
+
+  <div class="post-summary">
+    <ul class="latest-posts">
+      <li ng-repeat ="blogs in blogPosts">{{blogs.updated_on}}
+        <a ng-href="#/{{blogs.id}}">{{blogs.title}}</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
